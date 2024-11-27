@@ -7,28 +7,28 @@
     "machine_precision": 8,
     "custom_hardware_settings": {
       "basis_gates": [
-        "u",
-        "rz",
-        "z",
-        "rx",
-        "h",
-        "sdg",
-        "t",
         "ry",
-        "cy",
-        "cx",
-        "s",
-        "y",
-        "tdg",
-        "sx",
-        "u2",
-        "r",
-        "sxdg",
-        "p",
-        "u1",
-        "id",
+        "rz",
+        "u",
         "x",
-        "cz"
+        "sdg",
+        "r",
+        "rx",
+        "sx",
+        "id",
+        "sxdg",
+        "s",
+        "h",
+        "t",
+        "cy",
+        "tdg",
+        "u1",
+        "z",
+        "p",
+        "cz",
+        "u2",
+        "cx",
+        "y"
       ],
       "is_symmetric_connectivity": true
     },
@@ -40,6 +40,6 @@
     "pretty_qasm": true,
     "transpilation_option": "auto optimize",
     "timeout_seconds": 300,
-    "random_seed": 3816969402
+    "random_seed": 2104725578
   }
 }
