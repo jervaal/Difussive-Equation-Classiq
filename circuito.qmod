@@ -1,0 +1,90 @@
+qfunc main(output reg: qbit[]) {
+  allocate(5, reg);
+  PHASE(1.5708, reg[0]);
+  H(reg[0]);
+  RZ(0, reg[0]);
+  H(reg[0]);
+  PHASE(-1.5708, reg[0]);
+  CX(reg[1], reg[0]);
+  PHASE(1.5708, reg[1]);
+  H(reg[1]);
+  control (reg[0:1]) {
+    RZ(0, reg[1]);
+  }
+  H(reg[1]);
+    0.3162,
+    0.3162,
+    0.3162,
+    0.3162,
+    0.3162,
+    0.3162,
+    0.3162,
+    0.3162,
+    0.3162,
+    0.3162,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+  }
+  H(reg[3]);
+  PHASE(-1.5708, reg[3]);
+  CX(reg[3], reg[2]);
+  CX(reg[3], reg[1]);
+  CX(reg[3], reg[0]);
+  CX(reg[4], reg[0]);
+  CX(reg[4], reg[1]);
+  CX(reg[4], reg[2]);
+  CX(reg[4], reg[3]);
+  PHASE(1.5708, reg[4]);
+  H(reg[4]);
+  control (reg[0:4]) {
+    RZ(0, reg[4]);
+  }
+  H(reg[4]);
+  PHASE(-1.5708, reg[4]);
+  CX(reg[4], reg[3]);
+  CX(reg[4], reg[2]);
+  CX(reg[4], reg[1]);
+  CX(reg[4], reg[0]);
+}
+  }
+  H(reg[2]);
+  PHASE(-1.5708, reg[2]);
+  CX(reg[2], reg[1]);
+  CX(reg[2], reg[0]);
+  CX(reg[3], reg[0]);
+  CX(reg[3], reg[1]);
+  CX(reg[3], reg[2]);
+  PHASE(1.5708, reg[3]);
+  H(reg[3]);
+  control (reg[0:3]) {
+    RZ(0, reg[3]);
+  }
+  H(reg[3]);
+  PHASE(-1.5708, reg[3]);
+  CX(reg[3], reg[2]);
+  CX(reg[3], reg[1]);
+  CX(reg[3], reg[0]);
+  CX(reg[4], reg[0]);
+  CX(reg[4], reg[1]);
+  CX(reg[4], reg[2]);
+  CX(reg[4], reg[3]);
+  PHASE(1.5708, reg[4]);
+  H(reg[4]);
+  control (reg[0:4]) {
+    RZ(0, reg[4]);
+  }
+  H(reg[4]);
+  PHASE(-1.5708, reg[4]);
+  CX(reg[4], reg[3]);
+  CX(reg[4], reg[2]);
+  CX(reg[4], reg[1]);
+  CX(reg[4], reg[0]);
+}
